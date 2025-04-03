@@ -1,24 +1,25 @@
-@charset "utf";  
+@charset "utf-8";  
 
 * {   
     margin: 0;  
     padding: 0;  
     box-sizing: border-box;  
-    font-family: 'Open Sans';  
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;  
 }  
 
 /* Es la parte del cuerpo y fondo */  
 body {  
-    background-color:#66FF66;  
+    background-color: #66FF66;  
     font-family: Arial, Helvetica, sans-serif;
-  
 }  
+
+/* Encabezado */
 .header {  
-    background-image: url('img/Cabeza.jpg'); /* Cambia esto por la URL de tu imagen */  
-    background-size: cover; /* Asegura que la imagen cubra todo el espacio */  
-    background-position: center; /* Centra la imagen */  
-    height: 400px; /* Altura del encabezado */  
-    color: white; /* Color del texto */  
+    background-image: url('img/Cabeza.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    height: 400px;  
+    color: white;  
     display: flex;  
     flex-direction: column;  
     align-items: center;  
@@ -27,74 +28,57 @@ body {
 }  
 
 .header-title {  
-    font-size: 48px; /* Tama�o del t�tulo */  
+    font-size: 48px;  
 }  
 
 .header-subtitle {  
-    font-size: 24px; /* Tama�o del subt�tulo */  
-    margin-top: 10px; /* Espaciado superior */  
+    font-size: 24px;  
+    margin-top: 10px;  
 }  
-/* Parte del encabezado que dice "Bienvenido usuario"   
-header {  
-    padding: 15px;  
-    background-color: #FFCC66;  
-	background-image: url(img/Cabeza.jpg);
-	background-size: cover;
-}  
-header form{
-    background-color: #FFCC66;  
-}
-header h1{  
-    padding: 2px;  
-    background-color: #FFCC66;  
-
-}
-header estilo{
-    flex-direction:column;  
-
-}  */
 
 /* Parte de la lista horizontal (inicio, servicios, etc.) */  
 nav {  
     display: flex;  
     flex-direction: row;  
-    background-color:#6699CC;  
+    background-color: #6699CC;  
     margin: auto;   
 }  
 
-/* Navegaci�n */  
+/* Navegación */
 nav a {  
-    color:#FFFFFF;  
+    color: #FFFFFF;  
     padding: 14px 20px;  
     text-decoration: none;  
 }  
-nav img{
-width:100px;
+
+nav img {
+    width: 100px;
 }
 
 nav h1 {  
     color: #FFFFFF;  
     padding: 13px 10px;  
-    background-color:#6699CC;  
-} 
+    background-color: #6699CC;  
+}  
+
 nav ul {  
-    list-style-type: none; /* Elimina los puntos de la lista */  
-    display: flex; /* Hace que los elementos dentro de la lista se alineen horizontalmente */  
-    padding: 0; /* Elimina el padding */  
+    list-style-type: none;  
+    display: flex;  
+    padding: 0;  
 }  
 
 nav li {  
-    margin: 0 10px; /* Espaciado entre los elementos */  
-}   
+    margin: 0 10px;  
+}  
 
-/* Parte de la lista desplegable del bot�n servicios */  
+/* Parte de la lista desplegable del botón servicios */  
 .menu-vertical {  
     position: absolute;  
     display: none;  
     list-style: none;  
     width: 200px;  
     background-color: rgba(0, 0, 0, .5);  
-    z-index: 10; /* Aseg�rate de que tenga un z-index alto para que est� por encima de las im�genes */  
+    z-index: 10;  
 }  
 
 .menu-vertical li:hover {  
@@ -130,49 +114,139 @@ nav li:hover .menu-vertical {
 #Productos img:hover {  
     transform: scale(1.15);  
 }  
+
+/* Flexbox para productos */
 #Productos {  
     display: flex;  
     flex-wrap: wrap;  
-    gap: 20px; /* Espacio entre las im�genes */  
+    gap: 20px;  
 }  
 
 #Productos img {  
-    width: 200px; /* Ancho fijo para todas las im�genes */  
-    height: 200px; /* Alto fijo para mantener las mismas dimensiones */  
-    object-fit: cover; /* Hace que la imagen se recorte si no tiene el mismo aspecto */  
-    border: 2px solid white; /* Borde blanco */  
-    background-color: white; /* Fondo blanco */  
-	display: flex;  
+    width: 200px;  
+    height: 200px;  
+    object-fit: cover;  
+    border: 2px solid white;  
+    background-color: white;  
 }  
-.productos1{
-background-color:#FFFFFF;
-    flex-wrap: wrap;  
 
-}
+.productos1 {  
+    background-color: #FFFFFF;  
+    flex-wrap: wrap;  
+}  
+
 .producto {  
     display: flex;  
     flex-direction: column;  
-    align-items: center; /* Centra el texto con respecto a la imagen */  
+    align-items: center;  
 }  
 
 .producto img {  
-    width: 200px; /* Ancho fijo para todas las im�genes */  
-    height: 200px; /* Alto fijo para mantener las mismas dimensiones */  
-    object-fit: cover; /* Hace que la imagen se recorte si no tiene el mismo aspecto */  
-    border: 1px solid white; /* Borde blanco */  
-    background-color: white; /* Fondo blanco */  
+    width: 200px;  
+    height: 200px;  
+    object-fit: cover;  
+    border: 1px solid white;  
+    background-color: white;  
 }  
 
 .producto p {  
-    margin-top: 10px; /* Espacio entre la imagen y el texto */  
-    text-align: center; /* Centrar el texto */  
+    margin-top: 10px;  
+    text-align: center;  
 }  
-footer{
-background-color:#FF3333;
-padding: 10px;
-}
-h1{
-color:#FFFFFF;
-background-color:#FF9933;
 
+footer {  
+    background-color: #FF3333;  
+    padding: 10px;  
+    text-align: center;  
+}  
+
+h1 {  
+    color: #FFFFFF;  
+    background-color: #FF9933;  
+}  
+
+/* Media Queries para Responsividad */
+
+/* Pantallas grandes (escritorio grande) */
+@media (max-width: 1200px) {
+    #Productos {
+        grid-template-columns: repeat(4, 1fr);  /* 4 columnas */
+    }
 }
+
+/* Pantallas medianas (tablet) */
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;  /* Menú vertical en lugar de horizontal */
+    }
+
+    .header-title {
+        font-size: 36px;  /* Disminuir tamaño de título */
+    }
+
+    .header-subtitle {
+        font-size: 20px;  /* Disminuir tamaño de subtítulo */
+    }
+
+    #Productos {
+        grid-template-columns: repeat(3, 1fr);  /* 3 columnas */
+    }
+
+    .producto img {
+        width: 150px;  /* Ajustar tamaño de imágenes */
+        height: 150px;  /* Ajustar tamaño de imágenes */
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 28px;  /* Título más pequeño */
+    }
+
+    .header-subtitle {
+        font-size: 18px;  /* Subtítulo más pequeño */
+    }
+
+    #Productos {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columnas */
+    }
+
+    .producto img {
+        width: 120px;  /* Ajustar tamaño de imágenes */
+        height: 120px;  /* Ajustar tamaño de imágenes */
+    }
+}
+
+/* Pantallas muy pequeñas (móviles en retrato) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;  /* Menú en columna */
+    }
+
+    nav a {
+        padding: 10px;  /* Aumentar espacio de los enlaces */
+    }
+
+    .header-title {
+        font-size: 22px;  /* Título más pequeño */
+    }
+
+    .header-subtitle {
+        font-size: 16px;  /* Subtítulo más pequeño */
+    }
+
+    #Productos {
+        grid-template-columns: 1fr;  /* 1 columna */
+    }
+
+    .producto img {
+        width: 100px;  /* Ajustar tamaño de imágenes */
+        height: 100px;  /* Ajustar tamaño de imágenes */
+    }
+
+    footer {
+        font-size: 12px;  /* Reducir tamaño del texto en pie de página */
+    }
+}
+
